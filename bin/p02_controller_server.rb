@@ -1,4 +1,5 @@
 require 'rack'
+require 'byebug'
 require_relative '../lib/controller_base'
 
 class MyController < ControllerBase
@@ -21,4 +22,3 @@ Rack::Server.start(
   app: app,
   Port: 3000
 )
-
